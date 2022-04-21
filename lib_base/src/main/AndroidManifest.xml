@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lib_base">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:networkSecurityConfig="@xml/network_config"
+        tools:targetApi="n">
+
+        <service android:name=".service.InitService"/>
+
+        <uses-library
+            android:name="org.apache.http.APP_ID"
+            android:required="false"/>
+
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="25986155"/>
+
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="cdDmbzw53gxdb1oQEScZyvBy"/>
+
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="G7MiXG713MIbx0YLrX5H51HUZnWR0aNo"/>
+
+    </application>
+
+</manifest>

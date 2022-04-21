@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="WakeUpListArray">
+        <item>小龙在呢</item>
+        <item>请说</item>
+        <item>有什么吩咐</item>
+        <item>主人，我在哦</item>
+    </array>
+
+    <array name="NoAnswerArray">
+        <item>小龙不明白呢</item>
+        <item>不知道你在说什么</item>
+        <item>这可难倒我了</item>
+        <item>很抱歉，小龙没听懂</item>
+    </array>
+
+    <array name="NoSupportArray">
+        <item>暂不支持此功能</item>
+        <item>很抱歉，这个功能我还在学习</item>
+        <item>这我可不会</item>
+    </array>
+
+</resources>
